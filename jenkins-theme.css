@@ -1,0 +1,43 @@
+/* Jenkins Productive Theme Header */
+#header {
+    background-color: #1b1c63 !important; /* dark blue background */
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    color: white;
+}
+
+#header #jenkins-name-icon {
+    display: flex;
+    align-items: center;
+}
+
+#jenkins-name-icon img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+#jenkins-name-icon span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#search-box {
+    flex-grow: 1;
+    margin: 0 1rem;
+}
+
+#search-box input {
+    width: 100%;
+    padding: 0.4rem;
+    border-radius: 8px;
+    border: none;
+}
+
+#right-side-icons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}

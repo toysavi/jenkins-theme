@@ -1,43 +1,76 @@
-/* Jenkins Productive Theme Header */
+/* Productive Jenkins Header Theme for Jenkins >= 2.504 */
 #header {
-    background-color: #1b1c63 !important; /* dark blue background */
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 1rem;
-    color: white;
+  background-color: #1b1c63 !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  height: 56px;
+  font-family: "Segoe UI", sans-serif;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-#header #jenkins-name-icon {
-    display: flex;
-    align-items: center;
+/* Jenkins logo and "Productive" label */
+#jenkins-name-icon {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 #jenkins-name-icon img {
-    height: 40px;
-    margin-right: 10px;
+  height: 36px;
+  margin-right: 12px;
 }
 
-#jenkins-name-icon span {
-    font-size: 20px;
-    font-weight: bold;
+#jenkins-name-icon::after {
+  content: "Productive";
+  color: #ffffff;
+  font-weight: bold;
+  margin-left: 8px;
 }
 
-#search-box {
-    flex-grow: 1;
-    margin: 0 1rem;
-}
-
+/* Search bar styling */
 #search-box input {
-    width: 100%;
-    padding: 0.4rem;
-    border-radius: 8px;
-    border: none;
+  background-color: #ffffff;
+  border-radius: 8px;
+  border: none;
+  padding: 8px 12px;
+  min-width: 300px;
+  font-size: 14px;
+  outline: none;
 }
 
+#search-box input::placeholder {
+  color: #888;
+}
+
+/* Right side: user icon + logout */
 #right-side-icons {
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+#right-side-icons .login {
+  display: flex;
+  align-items: center;
+  background-color: #24307a;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-weight: 500;
+  color: #fff;
+}
+
+#right-side-icons .login:hover {
+  background-color: #3644a0;
+  cursor: pointer;
+}
+
+#right-side-icons svg,
+#right-side-icons img {
+  height: 20px;
+  width: 20px;
+  fill: #fff;
 }
